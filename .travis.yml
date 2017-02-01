@@ -7,7 +7,7 @@ deploy:
   provider: heroku
   api_key:
     secure: jCxVIrQnJB31WNCKKfRgMtlB/GMsuB9Ccj5/JRf4ZCbZkEDvmWwrDnyiZVzMIv2oXwfr8d69up07ox12Fo1pHHn90BGgGrMjh6dl+nlPJHs3o1U9gTo6MEVg/1mLXfLDER+9UlJjaGv0inQXgY53Cerg53lwXAoL20cJsn5gfUtlZ6bowtvfPMLXFRh1j/nrQCEtBcLPjfSgGAbZIWc460jvkxrB3XdzciadkHnnDHgo9nKa4IOsqxM/0BCNotqimu+++rmI8TZkjimGW5rk4ItuhfSdrFenA6zwAaUdASjTqLbIUTEV7dAItZscq/j0uQSk1FIk2TNaGBerS6VTgCRk6Ni6eqeCirMRs+/4++3JiyFMwMvQqFxEvtvmkuDNXzsuoVr1ahXk/0ECTEoNky5/bZAr74XK8UZIsjPtH/RVSPkgZb3OE+ZfJJ/qrQE+Lv0096TiOsk/FZ+UywzTDEk1ivUOV/JgQTpvQhBnBzca8oeAwaQHug7OyO//FWvMiQ26bUNwJWUGLFb48dy39PLPWr351BhM+uRc5vcjhXLPKSPEwiRjIOFGa5sIksSVfJttkLZFG8IV1s7Au0OSPgmz4I3xItX2Rv8DS8hqz6yMexMNkJhqMKvChSPMg2qb4MzMNNgQl0HNw6cJbik3Wa11d3mycCTQUsl72iVqQYE=
-  app: addressbook
+  app: todolistappvaaadin
   on:
     repo: alexandersokolov/addressbook
     branch: todo_tasks
