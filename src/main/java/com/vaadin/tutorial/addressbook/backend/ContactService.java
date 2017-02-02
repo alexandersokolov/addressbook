@@ -24,7 +24,13 @@ public class ContactService {
             "Brown", "Davis", "Miller", "Wilson", "Moore", "Taylor",
             "Anderson", "Thomas", "Jackson", "White", "Harris", "Martin",
             "Thompson", "Young", "King", "Robinson" };
-
+    
+    //Dummy data for tasks
+    static String[] tasks = { "Attend Lecture", "Read Notes", "Study", "Buy Textbook",
+            "Build a wall", "Eat potato", "Fail Class", "Build Death Star",
+            "Destroy Death Star"};
+    
+    
     private static ContactService instance;
 
     public static ContactService createDemoService() {
@@ -36,14 +42,27 @@ public class ContactService {
             Calendar cal = Calendar.getInstance();
             for (int i = 0; i < 100; i++) {
                 Contact contact = new Contact();
+                
+                //Sets the first name randomly
                 contact.setFirstName(fnames[r.nextInt(fnames.length)]);
+                
+                //Sets the last name randomly
                 contact.setLastName(lnames[r.nextInt(fnames.length)]);
-                contact.setEmail(contact.getFirstName().toLowerCase() + "@"
-                        + contact.getLastName().toLowerCase() + ".com");
-                contact.setPhone("+ 358 555 " + (100 + r.nextInt(900)));
+                
+                //Set the task randomly
+                contact.setTask(tasks[r.nextInt(tasks.length)]);
+              
+                
+                //Sets the startDate randomly
                 cal.set(1930 + r.nextInt(70),
                         r.nextInt(11), r.nextInt(28));
-                contact.setBirthDate(cal.getTime());
+                contact.setStartDate(cal.getTime());
+                
+                //Sets the end date at a specific time 
+                cal.set(2017,02,07);
+                contact.setExpectedEndDate(cal.getTime());
+                
+                
                 contactService.save(contact);
             }
             instance = contactService;
